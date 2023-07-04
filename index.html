@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Current Temprature Checking App</h1>
+  Temprature : <input type="text" id="temp" placeholder="current Temprature">
+  <br>
+  Min Temprature : <input type="text" id="miniTemp" placeholder="current today minimum Temprature">
+  <br>
+  <button onclick="think()">think</button>
+  <h1 id="result"></h1>
+
+
+  <script>
+      function think() {
+        let temp = document.getElementById("temp").value;
+        let miniTemp = document.getElementById("miniTemp").value;
+        let result = document.getElementById("result");
+
+        if ((temp < -10) || (miniTemp < -10)) {
+          result.innerText = "don't go outside";
+        } else if (
+          (temp >= -10 && temp <= 5) ||
+          (miniTemp >= -10 && miniTemp <= 5)){
+          result.innerText = "carry coat and be careful."
+        
+        } else if ((temp > 5 && temp <= 20) ||
+          (miniTemp > 5 && miniTemp <= 20)) {    
+          result.innerText = "carry jacket with you."
+
+        } else if ((temp > 20 && temp <= 35)) {
+          result.innerText = "don't carry jacket."
+    
+        } else if (temp > 35) {
+          result.innerText = " don't go outside It's too hot."
+        }
+      }
+  </script>
+</body>
+</html>
