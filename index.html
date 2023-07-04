@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
   <h1>Current Temprature Checking App</h1>
-  Temprature : <input type="text" id="temp" placeholder="current Temprature">
+  
+  <label>Temprature</label><input type="text" id="temp" placeholder="current Temprature">
   <br>
-  Min Temprature : <input type="text" id="miniTemp" placeholder="current today minimum Temprature">
+  <label>Min Temprature</label> <input type="text" id="miniTemp" placeholder="current today minimum Temprature">
   <br>
-  <button onclick="think()">think</button>
+  <button onclick="think()" id="think">think</button>
   <h1 id="result"></h1>
 
 

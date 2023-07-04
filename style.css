@@ -1,0 +1,35 @@
+body {
+  /* display: flex;
+  justify-content: center; */
+  background-color: rgb(88, 126, 128);
+}
+
+#temp {
+  background-color: rgb(73, 233, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#miniTemp {
+  align-content: center;
+  background-color: rgb(73, 233, 233);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#think {
+  align-content: center;
+  background-color: rgb(73, 233, 233);
+}
+
+
+label {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
